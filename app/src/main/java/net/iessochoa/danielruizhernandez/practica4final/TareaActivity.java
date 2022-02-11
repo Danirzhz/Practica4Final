@@ -17,13 +17,13 @@ import java.util.Arrays;
 
 public class TareaActivity extends AppCompatActivity {
 
-    Spinner categorias,estados,prioridad;
+    Spinner categorias, estados, prioridad;
     EditText tecnicoAsig, breveDesc, descripcion;
-    public static Tarea tarea=null;
+    public static Tarea tarea = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        tarea=null;
+        tarea = null;
         super.onCreate(savedInstanceState);
         this.setTitle("Nueva Tarea");
 
@@ -47,8 +47,8 @@ public class TareaActivity extends AppCompatActivity {
                 new AdapterView.OnItemSelectedListener() {
                     public void onItemSelected(AdapterView<?> parent,
                                                android.view.View v, int position, long id) {
-                        String ele=(String) parent.getItemAtPosition(position);
-                        Toast.makeText(getApplicationContext(),getString(R.string.msg_seleccion)+ ele,Toast.LENGTH_LONG).show();
+                        String ele = (String) parent.getItemAtPosition(position);
+                        Toast.makeText(getApplicationContext(), getString(R.string.msg_seleccion) + ele, Toast.LENGTH_LONG).show();
                     }
 
                     public void onNothingSelected(AdapterView<?> parent) {
@@ -57,8 +57,8 @@ public class TareaActivity extends AppCompatActivity {
                 });
         Bundle bundle = getIntent().getExtras();
         tarea = bundle.getParcelable("Datos");
-        if (tarea!=null){
-            this.setTitle("Editar Tarea "+tarea.getId());
+        if (tarea != null) {
+            this.setTitle("Editar Tarea " + tarea.getId());
             editarTarea();
         }
     }
@@ -78,9 +78,8 @@ public class TareaActivity extends AppCompatActivity {
         prioridad.setSelection(Arrays.asList(priori).indexOf(tarea.getPrioridad()));
     }
 
-    /**Spinner categorias,estados,prioridad;
-     EditText tecnicoAsig, breveDesc, descripcion**/
-    public void Guardar(View v){
+    //Spinner guardar
+    public void Guardar(View v) {
 
         tecnicoAsig = findViewById(R.id.tecnicoAsig);
         breveDesc = findViewById(R.id.breveDesc);
@@ -92,24 +91,23 @@ public class TareaActivity extends AppCompatActivity {
         String brev = String.valueOf(breveDesc.getText());
         String descrip = String.valueOf(descripcion.getText());
 
-        if (!cat.equals("") || !est.equals("") || !prio.equals("") || !tec.equals("")|| !brev.equals("")|| !descrip.equals("")){
-            if (tarea!=null && tarea.getTecnico()!=null && tarea.getResumen()!=null){
+        if (!cat.equals("") || !est.equals("") || !prio.equals("") || !tec.equals("") || !brev.equals("") || !descrip.equals("")) {
+            if (tarea != null && tarea.getTecnico() != null && tarea.getResumen() != null) {
                 tarea.setCategoria(cat);
                 tarea.setEstado(est);
                 tarea.setPrioridad(prio);
                 tarea.setDesc(descrip);
                 tarea.setResumen(brev);
                 tarea.setTecnico(tec);
-            }
-            else
-                tarea = new Tarea(est,cat,prio,tec,brev,descrip);
+            } else
+                tarea = new Tarea(est, cat, prio, tec, brev, descrip);
             Intent iBack = getIntent();
             iBack.putExtra("Datos", tarea);
-            setResult(RESULT_OK,iBack);
-        }else{
+            setResult(RESULT_OK, iBack);
+        } else {
             setResult(RESULT_CANCELED);
         }
         finish();
-        tarea=null;
+        tarea = null;
     }
 }

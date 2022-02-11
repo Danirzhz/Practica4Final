@@ -11,6 +11,9 @@
     <string name="tec">Técnico asignado</string>
     <string name="brevDesc">Breve descripción</string>
     <string name="descEntera">Descripción</string>
+    <string name="descripcion_item">Descripcion item</string>
+    <string name="editar">Editar</string>
+    <string name="imagen_tarea">imagen Tarea</string>
     <string-array name="categoria">
         <item>Reparación</item>
         <item>Instalación</item>

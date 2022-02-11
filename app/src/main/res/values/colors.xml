@@ -8,9 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="azul_cielo">#5DADE2</color>
-    <color name="Urgente">#DC143C</color>
+    <color name="Urgente">#0082fd</color>
     <color name="Sin_prioridad">#8b8c7a</color>
-    <color name="Alta">#fd7900</color>
+    <color name="Alta">#0082fd</color>
     <color name="Media">#0082fd</color>
-    <color name="Baja">#91FD00</color>
+    <color name="Baja">#0082fd</color>
 </resources>

@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class Tarea implements Parcelable {
-    static int CONTADOR=1;
+    static int CONTADOR = 1;
     private int id;
     private String estado;
     private String categoria;
@@ -27,35 +27,61 @@ public class Tarea implements Parcelable {
     }
 
 
-    public int getId() {        return id;    }
+    public int getId() {
+        return id;
+    }
 
-    public void setId(int id) {        this.id = id;    }
+    public void setId(int id) {
+        this.id = id;
+    }
 
-    public String getEstado() {        return estado;    }
+    public String getEstado() {
+        return estado;
+    }
 
-    public void setEstado(String estado) {        this.estado = estado;    }
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
 
-    public String getCategoria() {        return categoria;    }
+    public String getCategoria() {
+        return categoria;
+    }
 
-    public void setCategoria(String categoria) {        this.categoria = categoria;    }
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
 
-    public String getPrioridad() {        return prioridad;    }
+    public String getPrioridad() {
+        return prioridad;
+    }
 
-    public void setPrioridad(String prioridad) {        this.prioridad = prioridad;    }
+    public void setPrioridad(String prioridad) {
+        this.prioridad = prioridad;
+    }
 
-    public String getTecnico() {        return tecnico;    }
+    public String getTecnico() {
+        return tecnico;
+    }
 
-    public void setTecnico(String tecnico) {        this.tecnico = tecnico;    }
+    public void setTecnico(String tecnico) {
+        this.tecnico = tecnico;
+    }
 
-    public String getResumen() {        return resumen;    }
+    public String getResumen() {
+        return resumen;
+    }
 
-    public void setResumen(String resumen) {        this.resumen = resumen;    }
+    public void setResumen(String resumen) {
+        this.resumen = resumen;
+    }
 
-    public String getDesc() {        return desc;    }
+    public String getDesc() {
+        return desc;
+    }
 
-    public void setDesc(String desc) {        this.desc = desc;    }
-
-
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
 
 
 ////Parcelable//////

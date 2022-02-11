@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.DialogFragment;
 
+//Creo que el dialogo acercaDe aparte
 public class DialogoAlerta extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -17,10 +18,9 @@ public class DialogoAlerta extends DialogFragment {
         builder.setMessage("Práctica 4\n" +
                 "V 1.0\n" +
                 "Daniel Ruiz Hernandez\n" +
-                "Licencia cc\n" +
-                "(Creative Commons)")
+                "Licencia cc " + " (Creative Commons)")
                 .setTitle("Acerca de...")
-                .setPositiveButton("aceptar", new DialogInterface.OnClickListener() {
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.cancel();
                     }

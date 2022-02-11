@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //borrar tarea
         tareasAdapter.setOnClickBorrarListener(new TareasAdapter.OnItemClickBorrarListener() {
             @Override
             public void onItemClickBorrar(Tarea tarea) {
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //ver tarea
         tareasAdapter.setOnClickTareaListener(new TareasAdapter.OnItemClickTareaListener() {
             @Override
             public void onItemClickTarea(Tarea tarea) {
@@ -67,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //editar
         tareasAdapter.setOnClickEditarLister(new TareasAdapter.OnIntemEditarListener() {
             @Override
             public void onItemEditar(Tarea tarea) {
@@ -75,8 +78,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //Enviamos la tarea a editar para despues recogerla
     private void editarTarea(Tarea tarea) {
-        //Enviamos la tarea a editar y luego la recogemos
+
         Intent i = new Intent(this, TareaActivity.class);
         i.putExtra("Datos", String.valueOf(tarea));
         mStartForResultTarea2.launch(i);
@@ -103,9 +107,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_add:
                 accionBotones(null);
 
-                return true;
-            case R.id.action_del:
-                tareaViewModel.delNota();
                 return true;
             case R.id.action_acercade:
                 FragmentManager fragmentManager = getSupportFragmentManager();
@@ -165,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder dialogo = new AlertDialog.Builder(MainActivity.this);
         dialogo.setTitle("Aviso");// titulo y mensaje
 
-        dialogo.setMessage("Está seguro que desea eliminar la tarea con id " + tarea.getId());
+        dialogo.setMessage("Quieres eliminar la tarea con id " + tarea.getId());
 // agregamos botón Ok y su evento
         dialogo.setPositiveButton(android.R.string.yes
                 , new DialogInterface.OnClickListener() {
