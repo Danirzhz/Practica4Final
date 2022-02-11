@@ -81,7 +81,7 @@ public class TareasAdapter extends RecyclerView.Adapter<TareasAdapter.TareaViewH
         private TextView tvResumen;
         private TextView tvTecnico;
         private ImageView ivEstado;
-        private ImageView ivBorrar;
+
         private ImageView ivEditar;
         private ConstraintLayout lytItem;
 
@@ -92,14 +92,11 @@ public class TareasAdapter extends RecyclerView.Adapter<TareasAdapter.TareaViewH
             tvTecnico = itemView.findViewById(R.id.tecnico);
             ivEstado = itemView.findViewById(R.id.imagenTarea);
             lytItem = itemView.findViewById(R.id.lyt_Item);
-            ivBorrar = itemView.findViewById(R.id.borrar);
+
             ivEditar = itemView.findViewById(R.id.editar);
 
 
-            ivBorrar.setOnClickListener(view -> {
-                if (listenerBorrar != null)
-                    listenerBorrar.onItemClickBorrar(listaTareas.get(TareaViewHolder.this.getAdapterPosition()));
-            });
+
 
             ivEditar.setOnClickListener(view -> {
                 if (listenerEditar != null)
