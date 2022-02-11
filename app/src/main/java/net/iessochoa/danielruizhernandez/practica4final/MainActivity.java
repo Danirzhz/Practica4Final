@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void editarTarea(Tarea tarea) {
         //Enviamos la tarea a editar y luego la recogemos
-        Intent i = new Intent(this, AnyadirTarea.class);
+        Intent i = new Intent(this, TareaActivity.class);
         i.putExtra("Datos", String.valueOf(tarea));
         mStartForResultTarea2.launch(i);
 
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void accionBotones(View v) {
         //Enviamos un null en la tarea
-        Intent i = new Intent(this, AnyadirTarea.class);
+        Intent i = new Intent(this, TareaActivity.class);
         i.putExtra("Datos", String.valueOf(tareaEnviar));
         mStartForResultTarea.launch(i);
     }

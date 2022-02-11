@@ -15,7 +15,7 @@ import net.iessochoa.danielruizhernandez.practica4final.model.Tarea;
 
 import java.util.Arrays;
 
-public class AnyadirTarea extends AppCompatActivity {
+public class TareaActivity extends AppCompatActivity {
 
     Spinner categorias,estados,prioridad;
     EditText tecnicoAsig, breveDesc, descripcion;

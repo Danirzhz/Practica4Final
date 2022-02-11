@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/azul_cielo"
     android:padding="16dp"
-    tools:context=".AnyadirTarea">
+    tools:context=".TareaActivity">
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

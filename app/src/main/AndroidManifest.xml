@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practica4Final">
         <activity
-            android:name=".AnyadirTarea"
+            android:name=".TareaActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
