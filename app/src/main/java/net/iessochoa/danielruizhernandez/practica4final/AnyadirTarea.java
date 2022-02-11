@@ -77,7 +77,7 @@ public class AnyadirTarea extends AppCompatActivity {
         String[] priori = getResources().getStringArray(R.array.prioridad);
         prioridad.setSelection(Arrays.asList(priori).indexOf(tarea.getPrioridad()));
     }
-
+//.
     /**Spinner categorias,estados,prioridad;
      EditText tecnicoAsig, breveDesc, descripcion**/
     public void Guardar(View v){
