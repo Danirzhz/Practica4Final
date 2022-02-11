@@ -12,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -31,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView rvLista;
     private TareaViewModel tareaViewModel;
     private TareasAdapter tareasAdapter;
-    private int cuentaTreas = 1;
     private Tarea tareaEnviar = null;
 
     @Override
@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -167,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
         dialogo.setTitle("Aviso");// titulo y mensaje
 
         dialogo.setMessage("Quieres eliminar la tarea con id " + tarea.getId());
-// agregamos botón Ok y su evento
+        // agregamos el botón Ok y su evento
         dialogo.setPositiveButton(android.R.string.yes
                 , new DialogInterface.OnClickListener() {
                     @Override
@@ -191,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
         dialogo.setTitle(tarea.getTecnico());// titulo y mensaje
 
         dialogo.setMessage(tarea.getDesc());
-// agregamos botón Ok y su evento
+        // agregamos el botón Ok y su evento
         dialogo.setPositiveButton(android.R.string.ok
                 , new DialogInterface.OnClickListener() {
                     @Override

@@ -1,5 +1,6 @@
 package net.iessochoa.danielruizhernandez.practica4final.adapters;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +33,7 @@ public class TareasAdapter extends RecyclerView.Adapter<TareasAdapter.TareaViewH
     }
 
 
+    @SuppressLint("SetTextI18n")
     public void onBindViewHolder(@NonNull TareaViewHolder holder, int position) {
         if (listaTareas != null) {
             //recuperamos la tarea a mostrar
@@ -69,6 +71,7 @@ public class TareasAdapter extends RecyclerView.Adapter<TareasAdapter.TareaViewH
     }
 
 
+    @SuppressLint("NotifyDataSetChanged")
     public void setListaTareas(List<Tarea> tareas) {
         listaTareas = tareas;
         notifyDataSetChanged(); //Notifica el cambio para recargar la lista
@@ -82,12 +85,10 @@ public class TareasAdapter extends RecyclerView.Adapter<TareasAdapter.TareaViewH
     }
 
     public class TareaViewHolder extends RecyclerView.ViewHolder {
-        private TextView tvResumen;
-        private TextView tvTecnico;
-        private ImageView ivEstado;
-        private ImageView ivBorrar;
-        private ImageView ivEditar;
-        private ConstraintLayout lytItem;
+        private final TextView tvResumen;
+        private final TextView tvTecnico;
+        private final ImageView ivEstado;
+        private final ConstraintLayout lytItem;
 
 
         public TareaViewHolder(@NonNull View itemView) {
@@ -96,8 +97,8 @@ public class TareasAdapter extends RecyclerView.Adapter<TareasAdapter.TareaViewH
             tvTecnico = itemView.findViewById(R.id.tecnico);
             ivEstado = itemView.findViewById(R.id.imagenTarea);
             lytItem = itemView.findViewById(R.id.lyt_Item);
-            ivBorrar = itemView.findViewById(R.id.borrar);
-            ivEditar = itemView.findViewById(R.id.editar);
+            ImageView ivBorrar = itemView.findViewById(R.id.borrar);
+            ImageView ivEditar = itemView.findViewById(R.id.editar);
 
 
             ivEditar.setOnClickListener(view -> {

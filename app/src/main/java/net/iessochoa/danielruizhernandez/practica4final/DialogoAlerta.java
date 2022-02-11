@@ -16,7 +16,7 @@ public class DialogoAlerta extends DialogFragment {
                 new AlertDialog.Builder(getActivity());
 
         builder.setMessage("Práctica 4\n" +
-                "V 1.0\n" +
+                "V 4.0\n" +
                 "Daniel Ruiz Hernandez\n" +
                 "Licencia cc " + " (Creative Commons)")
                 .setTitle("Acerca de...")

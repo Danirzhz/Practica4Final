@@ -18,7 +18,7 @@ import java.util.Arrays;
 public class TareaActivity extends AppCompatActivity {
 
     Spinner categorias, estados, prioridad;
-    EditText tecnicoAsig, breveDesc, descripcion;
+    EditText tecnicoAsig, breveDesc, descripcion = findViewById(R.id.descripcion);
     public static Tarea tarea = null;
 
     @Override
