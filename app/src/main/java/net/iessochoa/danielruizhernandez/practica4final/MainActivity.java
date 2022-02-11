@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void verTarea(Tarea tarea) {
         AlertDialog.Builder dialogo = new AlertDialog.Builder(MainActivity.this);
-        dialogo.setTitle(tarea.getTecnico());// titulo y mensaje
+        dialogo.setTitle(tarea.getTecnico());
 
         dialogo.setMessage(tarea.getDesc());
         // agregamos el botón Ok y su evento

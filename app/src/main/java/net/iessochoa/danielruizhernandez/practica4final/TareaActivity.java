@@ -18,7 +18,7 @@ import java.util.Arrays;
 public class TareaActivity extends AppCompatActivity {
 
     Spinner categorias, estados, prioridad;
-    EditText tecnicoAsig, breveDesc, descripcion = findViewById(R.id.descripcion);
+    EditText tecnicoAsig, breveDesc, descripcion;
     public static Tarea tarea = null;
 
     @Override
@@ -78,7 +78,7 @@ public class TareaActivity extends AppCompatActivity {
         prioridad.setSelection(Arrays.asList(priori).indexOf(tarea.getPrioridad()));
     }
 
-    //Spinner guardar
+    //Guardamos todo
     public void Guardar(View v) {
 
         tecnicoAsig = findViewById(R.id.tecnicoAsig);
