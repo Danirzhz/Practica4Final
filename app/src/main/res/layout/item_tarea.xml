@@ -13,7 +13,8 @@
         android:contentDescription="imagen de la Tarea"
         android:src="@drawable/addicon"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/addicon" />
 
     <TextView
         android:id="@+id/resumen"
@@ -58,7 +59,7 @@
         android:layout_toStartOf="@+id/borrar"
         app:layout_constraintEnd_toStartOf="@+id/borrar"
         app:layout_constraintTop_toTopOf="@+id/resumen"
-        app:srcCompat="@drawable/ic_action_name" />
+        app:srcCompat="@drawable/hecho2" />
 
     <ImageView
         android:id="@+id/borrar"
