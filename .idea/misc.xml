@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/danir/AndroidStudioProjects/Practica4Final/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/danir/AndroidStudioProjects/Practica4Final/app/src/main/res/drawable/abierto.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/danir/AndroidStudioProjects/Practica4Final/app/src/main/res/drawable/en_curso.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/danir/AndroidStudioProjects/Practica4Final/app/src/main/res/drawable/hecho.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/danir/AndroidStudioProjects/Practica4Final/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/danir/AndroidStudioProjects/Practica4Final/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/danir/AndroidStudioProjects/Practica4Final/app/src/main/res/layout/activity_anyadir_tarea.xml" value="0.4" />
+        <entry key="..\:/Users/danir/AndroidStudioProjects/Practica4Final/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/danir/AndroidStudioProjects/Practica4Final/app/src/main/res/layout/item_tarea.xml" value="0.264" />
+        <entry key="..\:/Users/danir/AndroidStudioProjects/Practica4Final/app/src/main/res/layout/lista_view_model.xml" value="0.1" />
+        <entry key="..\:/Users/danir/AndroidStudioProjects/Practica4Final/app/src/main/res/menu/menumain.xml" value="0.25025641025641027" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

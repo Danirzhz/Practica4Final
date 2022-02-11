@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Practica4</string>
+    <string name="submit">Aceptar</string>
+    <string name="cat">Categoria</string>
+    <string name="prio">Prioridad</string>
+    <string name="estado">Estado</string>
+    <string name="msg_seleccion">Prioridad asignada: </string>
+    <string name="eliminar">Borrar</string>
+    <string name="anyadir">Añadir</string>
+    <string name="acercade">Acerca de &#8230;</string>
+    <string name="tec">Técnico asignado</string>
+    <string name="brevDesc">Breve descripción</string>
+    <string name="descEntera">Descripción</string>
+    <string-array name="categoria">
+        <item>Reparación</item>
+        <item>Instalación</item>
+        <item>Mantenimiento</item>
+        <item>Comercial</item>
+        <item>Otros</item>
+    </string-array>
+    <string-array name="estado">
+        <item>Abierta</item>
+        <item>En curso</item>
+        <item>Terminada</item>
+    </string-array>
+    <string-array name="prioridad">
+        <item>Alta</item>
+        <item>Media</item>
+        <item>Baja</item>
+    </string-array>
+</resources>
