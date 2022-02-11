@@ -3,9 +3,10 @@ package net.iessochoa.danielruizhernandez.practica4final.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Tarea {
+public class Tarea implements Parcelable {
     static int CONTADOR=1;
     private int id;
     private String estado;

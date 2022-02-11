@@ -36,30 +36,34 @@ public class TareasAdapter extends RecyclerView.Adapter<TareasAdapter.TareaViewH
         if (listaTareas != null) {
             //recuperamos la tarea a mostrar
             final Tarea tarea = listaTareas.get(position);
-            //mostramos los datos;
-            holder.tvResumen.setText(tarea.getId() + "-" + tarea.getResumen());
-            holder.tvTecnico.setText(tarea.getTecnico());
-            //en función del tipo de nota, mostramos un icono u otro
-            switch (tarea.getEstado()) {
-                case "Abierta":
-                    holder.ivEstado.setImageResource(R.drawable.abierto);
-                    break;
-                case "En curso":
-                    holder.ivEstado.setImageResource(R.drawable.en_curso);
-                    break;
-                case "Terminada":
-                    holder.ivEstado.setImageResource(R.drawable.hecho);
-            }
-            switch (tarea.getPrioridad()) {
-                case "Alta":
-                    holder.lytItem.setBackgroundResource(R.color.Alta);
-                    break;
-                case "Media":
-                    holder.lytItem.setBackgroundResource(R.color.Media);
-                    break;
-                case "Baja":
-                    holder.lytItem.setBackgroundResource(R.color.Baja);
-                    break;
+            if (tarea!=null) {
+
+
+                //mostramos los datos;
+                holder.tvResumen.setText(tarea.getId() + "-" + tarea.getResumen());
+                holder.tvTecnico.setText(tarea.getTecnico());
+                //en función del tipo de nota, mostramos un icono u otro
+                switch (tarea.getEstado()) {
+                    case "Abierta":
+                        holder.ivEstado.setImageResource(R.drawable.abierto);
+                        break;
+                    case "En curso":
+                        holder.ivEstado.setImageResource(R.drawable.en_curso);
+                        break;
+                    case "Terminada":
+                        holder.ivEstado.setImageResource(R.drawable.hecho);
+                }
+                switch (tarea.getPrioridad()) {
+                    case "Alta":
+                        holder.lytItem.setBackgroundResource(R.color.Alta);
+                        break;
+                    case "Media":
+                        holder.lytItem.setBackgroundResource(R.color.Media);
+                        break;
+                    case "Baja":
+                        holder.lytItem.setBackgroundResource(R.color.Baja);
+                        break;
+                }
             }
         }
     }

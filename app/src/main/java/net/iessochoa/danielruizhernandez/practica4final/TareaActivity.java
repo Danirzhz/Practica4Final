@@ -104,7 +104,7 @@ public class TareaActivity extends AppCompatActivity {
             else
                 tarea = new Tarea(est,cat,prio,tec,brev,descrip);
             Intent iBack = getIntent();
-            iBack.putExtra("Datos", String.valueOf(tarea));
+            iBack.putExtra("Datos", tarea);
             setResult(RESULT_OK,iBack);
         }else{
             setResult(RESULT_CANCELED);

@@ -55,12 +55,21 @@
         android:id="@+id/editar"
         android:layout_width="?android:attr/listPreferredItemHeight"
         android:layout_height="?android:attr/listPreferredItemHeight"
-
-        android:contentDescription="TODO"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="1dp"
+        android:layout_toStartOf="@+id/borrar"
+        app:layout_constraintEnd_toStartOf="@+id/borrar"
         app:layout_constraintTop_toTopOf="@+id/resumen"
-        app:srcCompat="@drawable/hecho2"
-        tools:ignore="MissingConstraints" />
+        app:srcCompat="@drawable/hecho2" />
+
+    <ImageView
+        android:id="@+id/borrar"
+        android:layout_width="?android:attr/listPreferredItemHeight"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editar"
+        app:srcCompat="@drawable/ic_delete" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
